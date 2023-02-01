@@ -35,3 +35,4 @@ func main() {
 	fmt.Printf("value of d1: %v\n", d1)
 	fmt.Printf("type of d1: %T\n", d1)
 }
+
