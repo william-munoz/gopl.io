@@ -28,4 +28,22 @@ func main() {
 
 	summer := months[6:9]
 	fmt.Printf("Summer value: %v\n", summer)
+
+	appendToSlice()
 }
+
+func appendToSlice() {
+	var integers []int
+
+	fmt.Printf("lenght of integers: %v\n", len(integers))
+	fmt.Printf("capacity of integers: %v\n", cap(integers))
+
+	for i := 0; i < 101; i++ {
+		integers = append(integers, i)
+	}
+
+	fmt.Printf("value of integers: %v\n", integers)
+	fmt.Printf("lenght of integers: %v\n", len(integers))
+	fmt.Printf("capacity of integers: %v\n", cap(integers))
+}
+
